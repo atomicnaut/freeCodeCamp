@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Survey Form</title>
+	</head>
+	<body>
+		<h1 id="title">Atomsphere Survey Form</h1>
+		<p id="description">Thank you for taking the time to help us improve the platform</p>
+
+		<form action="" id="survey-form">
+			<label for="name" id="name-label">Name <input type="text" id="name" name="name" placeholder="Enter your name" required /></label>
+			<label for="email" id="email-label">Email <input type="email" id="email" name="email" placeholder="Enter your Email" required /></label>
+			<label for="age" id="number-label">Age <span class="label-span">(optional)</span> <input id="age" type="number" name="age" min="10" max="120" placeholder="Age" /></label>
+
+			<label for="dropdown"
+				>Which option best describes your current role?
+				<select id="dropdown" name="role">
+					<option value="">Select your current role</option>
+					<option value="1">Student</option>
+					<option value="2">Full time Job</option>
+					<option value="3">Full time Learner</option>
+					<option value="4">Other</option>
+				</select>
+			</label>
+
+			<p>Would you recommend freeCodeCamp to a friend?</p>
+			<label for="definitely"><input id="definitely" type="radio" name="recommend" /> Definitely</label>
+			<label for="maybe"><input id="maybe" type="radio" name="recommend" /> Maybe</label>
+			<label for="not-sure"><input id="not-sure" type="radio" name="recommend" /> Not Sure</label>
+		</form>
+	</body>
+</html>
